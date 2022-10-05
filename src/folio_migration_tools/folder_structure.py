@@ -104,13 +104,9 @@ class FolderStructure:
             self.results_folder / f"folio_srs_{object_type_string}{self.file_template}.json"
         )
 
-        self.instance_id_map_path = (
-            self.results_folder / f"instance_id_map_{self.iteration_identifier}.json"
-        )
+        self.instance_id_map_path = self.results_folder / "instance_id_map.json"
 
-        self.holdings_id_map_path = (
-            self.results_folder / f"holdings_id_map_{self.iteration_identifier}.json"
-        )
+        self.holdings_id_map_path = self.results_folder / "holdings_id_map.json"
 
         self.preceding_succeeding_records_path = (
             self.results_folder / (
